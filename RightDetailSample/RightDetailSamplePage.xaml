@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ContentPage Padding="0,20,0,0" xmlns="http://xamarin.com/schemas/2014/forms" xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml" xmlns:local="clr-namespace:RightDetailSample" x:Class="RightDetailSample.RightDetailSamplePage">
+    <ListView ItemsSource="{Binding Items}">
+        <ListView.ItemTemplate>
+        <DataTemplate>
+				<TextCell Text="{Binding FooText}" Detail="{Binding FooDetail}" />
+			</DataTemplate>
+		</ListView.ItemTemplate>
+	</ListView>
+</ContentPage>
